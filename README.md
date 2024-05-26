@@ -3,6 +3,7 @@ Title: predict survival of patients with heart failure
 
 Members: 김예원(건축학과, yeawon0515@hanyang.ac.kr)
          신승국(수리데이터사이언스학과, tlstmdrnr135@naver.com)
+         장위신(기계공학과,weixin0713@hanyang.ac.kr）
          
 I. Proposal (Option 1or 2)
 심부전이란 심장의 구조적 또는 기능적 이상으로 인해 심장이 혈액을 받아들이는 이완 기능이나 짜내는 수축 기능이 감소하여 신체 조직에 필요한 혈액을 제대로 공급하지 못해 발생하는 질환군을 말한다. 발생 원인은 스트래스, 식습관, 음주 등 매우 다양하게 나타나며 바쁜 사회를 살아가는 현대인들에게 발생률이 점점 증가하고 있다. 또한 이 질환은 생명과 직결되는 매우 중요한 과제임으로 이에 대한 예측은 오늘날 매우 중요한 과제라고 할 수 있다. 
