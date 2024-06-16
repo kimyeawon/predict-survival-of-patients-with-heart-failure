@@ -95,7 +95,7 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 
 ![KakaoTalk_20240616_103254882](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/7433d075-8d5b-4c75-b08b-e6c707dc261a)
 
-각 변수와 death  간의 상관계수에 대한 히트맵이다. 표를 보면 다른 변수들에 비해 성별과 상대적으로 높은 선형관계를 가짐을 알 수 있다.
+각 변수와 death 간의 상관계수에 대한 히트맵이다. 표를 보면 다른 변수들에 비해 성별과 상대적으로 높은 선형관계를 가짐을 알 수 있다.
 
 ![KakaoTalk_20240616_105724555](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/4d7e364a-dcf2-45b6-ac01-17406ac076b6)
 
@@ -104,14 +104,21 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 ![KakaoTalk_20240616_110024795](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/4d6db861-037a-4c96-975e-da02b1d5935e)
 
 신경망 구조에 대한 요약이다.
-우리는 신경망 모델은총 1개의 입력층, 2개의 은닉층, 그리고 출력층 총 4개의 층으로 구성되어 있으며 활성화 함수로 leakyrelu를 사용하였다. 출력층에는 binary 변수에 대한 예측임으로 시그모이드 함수를 사용하였고 손실함수로 binary cross entropy를 사용하였다.
-
+신경망 모델은 총 1개의 입력층, 2개의 은닉층, 그리고 출력층 총 4개의 층으로 구성되어 있으며 활성화 함수로 leakyrelu를 사용하였다. 출력층에는 binary 변수에 대한 예측임으로 시그모이드 함수를 사용하였고 손실함수로 binary cross entropy를 사용하였다.
 추가적으로 optimizer는 adam을 사용하였고 learning_rate를 0.0015로 설정하였다.
 
 
 우리는 결과를 비교해보기위해 우리가 만든 DNN 모델과 Support Vector Machin(SVM), K-Nearest Neighborhood(KNN), Robust Linear Regression(RLR), RF(Random Forest) 모델을 비교해 보았다. 
 
 ![KakaoTalk_20240616_111316565](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/67104de1-8f7f-46a3-9779-6c008f21f0ef)
+
+accuracy는 정확도로써 모델이 예측한 값 중 정답의 비율을 나타내며 1에 가까울수록 좋다. 위 표는 test 데이터에 대한 accuracy로 DNN 모델의 Score가 가장 높음을 알 수 있다.
+
+Precision은 모델이 positive라고 예측한 것 중 실제로 positive인 것의 비율이다. 0에서 1 사이의 값을 가지며, 1에 가까울수록 정밀도가 높은 모델이다. 우리는 상식에 접근하여 생각해 보았을때 살았을 거라고 생각한 예측한 사람중 죽는 것이 더 문제된다고 판단하였다. 이에따라 살았을 거라고 생각한 사람중 진짜로 살아있는 사람에 대한 정확도를 예측하였다.
+
+![2](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/61816700-a090-4b51-9167-cbdefd0373f9)
+
+위 표는 정확도에 대한 각 모델의 score이다. 마찬가지로 DNN이 가장 높은 점수를 얻은것을 볼 수 있다.
 
 V. Conclusion: Discussion
 
