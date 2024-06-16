@@ -7,8 +7,8 @@ Members: 김예원(건축학과, yeawon0515@hanyang.ac.kr)
          
 I. Proposal 
 
-심부전이란 심장의 구조적 또는 기능적 이상으로 인해 심장이 혈액을 받아들이는 이완 기능이나 짜내는 수축 기능이 감소하여 신체 조직에 필요한 혈액을 제대로 공급하지 못해 발생하는 질환군을 말한다. 발생 원인은 스트래스, 식습관, 음주 등 매우 다양하게 나타나며 바쁜 사회를 살아가는 현대인들에게 발생률이 점점 증가하고 있다. 또한 이 질환은 생명과 직결되는 매우 중요한 과제임으로 이에 대한 예측은 오늘날 매우 중요한 과제라고 할 수 있다. 
-딥러닝은 주워진 데이터를 토대로 예측을 수행하는 매우 강력한 수단중 하나로, 많은 사람들에게 관심을 받으며 빠른 속도로 변화하고 있다. 또한 다양한 산업과 직군속에서 활용 및 가치를 창출하고 있으며 따라서 이에대한 역량을 갖추는 것은 매우 중요한 일중 하나이다. 우리는 DNN 모델의 구조를 파악하고 심부전에 의한 사망 여부 예측을 통해 간단한 문제를 해결한 후 다른 여러 머신러닝 기법들과 비교를 통해 딥러닝의 특성을 파악함으로써 이러한 역량을 갖출수 있고자 한다.
+심부전이란 심장의 구조적 또는 기능적 이상으로 인해 심장이 혈액을 받아들이는 이완 기능이나 짜내는 수축 기능이 감소하여 신체 조직에 필요한 혈액을 제대로 공급하지 못해 발생하는 질환군을 말한다. 발생 원인은 스트레스, 식습관, 음주 등 매우 다양하게 나타나며 바쁜 사회를 살아가는 현대인들에게 발생률이 점점 증가하고 있다. 또한 이 질환은 생명과 직결되는 중요한 문제임으로 이에 대한 예측은 오늘날 매우 중요한 과제라고 할 수 있다. 
+딥러닝은 주어진 데이터를 토대로 예측을 수행하는 매우 강력한 수단 중 하나로, 많은 사람들에게 관심을 받으며 빠른 속도로 변화하고 있다. 또한 다양한 산업과 직군 속에서 활용 및 가치를 창출하고 있으며 따라서 이에대한 역량을 갖추는 것은 매우 중요한 일 중 하나이다. 우리는 DNN 모델의 구조를 파악하고 심부전에 의한 사망 여부 예측을 통해 간단한 문제를 해결한 후 다른 여러 머신러닝 기법들과 비교를 통해 딥러닝의 특성을 파악함으로써 이러한 역량을 갖출수 있고자 한다.
 
 
 
@@ -51,12 +51,12 @@ III. Methodology
 
 
 3. DNN의 수학적 베이스
-DNN은 은닉층의 수, 노드의 수에 따라 많은 bias과 weight를 가지게 되며 weight의 경우 각 레이어의 노드의 곱, bias은 각 레이어의 노드의 합만큼의 갯수를 가지게 된다. 이들은 chain rule을 이용하여 loss 값을 줄이는 방향으로 학습을 진행하여 결과적으로 들어오는 변수에따라 weight와 bias가 비선형적으로 변하게 된다.
+DNN은 은닉층의 수, 노드의 수에 따라 많은 bias과 weight를 가지게 되며 weight의 경우 각 레이어의 노드의 곱, bias은 각 레이어의 노드의 합만큼의 개개수를 가지게 된다. 이들은 chain rule을 이용하여 loss 값을 줄이는 방향으로 학습을 진행하여 결과적으로 들어오는 변수에따라 weight와 bias가 비선형적으로 변하게 된다.
 chain rule은 합성함수를 미분하는 방법인데, 합성함수의 변화 값이 그 안에 구성함수로써 존재하는 다양한 변수(다변량 함수의 다양한 변수)들이 어떻게 변하게 되는지 추적할수 있다.
 
 ![KakaoTalk_20240526_163602832](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/d29193dc-a26e-4a2b-b477-891173c8fc93)
 
-우리는 이를 이용하여, 즉 gradient값을 이용하여 극소값을 찾는 최적화 문제를 풀 수 있다.
+우리는 이를 이용하여, 즉 gradient값을 이용하여 극솟값을 찾는 최적화 문제를 풀 수 있다.
 
 ![최적화 문제 예시](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/88fb2d3a-a69c-4c3d-b860-188f1c866aab)
 
@@ -76,8 +76,7 @@ chain rule은 합성함수를 미분하는 방법인데, 합성함수의 변화 
 -Explaining features 
 
 1. Binary cross entropy
-최적화 문제에 사용될 loss funtion은 다양한 것들이 사용되지만, 이중 우리가 사용할 loss function은 
-Binary Cross Entropy(BCE)이다. BCE는 이진화된 label을 가진 데이터에 사용되는 손실함수로, 최적화를 통해 두 라벨에 대한 베르누이 확률 분포의 근사를 수행하게 만든다.
+최적화 문제에 사용될 loss funtion은 다양한 것들이 사용되지만, 이중 우리가 사용할 loss function은 Binary Cross Entropy(BCE)이다. BCE는 이진화된 label을 가진 데이터에 사용되는 손실함수로, 최적화를 통해 두 라벨에 대한 베르누이 확률 분포의 근사를 수행하게 만든다.
 
 ![KakaoTalk_20240526_164747044](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/43ed4952-64d3-46d2-b76f-e354cb795121)
 
@@ -97,7 +96,7 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 
 ![KakaoTalk_20240616_104528371](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/6f0e7d3f-8633-4ed9-8a9a-7315f601ef40)
 
-데이터의 고유값 갯수이다. 표를 보면 anaemia, diabetes, high_blood_pressure, sex, smoking은 binary 변수이며, 우리의 target 변수인 DEATH_EVENT 역시 binary 변수이다.
+데이터의 고유값 개수이다. 표를 보면 anaemia, diabetes, high_blood_pressure, sex, smoking은 binary 변수이며, 우리의 target 변수인 DEATH_EVENT 역시 binary 변수이다.
 
 ![KakaoTalk_20240616_104754013](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/0efdd367-1cf3-4dcc-a53a-d71071e54b70)
 
@@ -118,20 +117,20 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 추가적으로 optimizer는 adam을 사용하였고 learning_rate를 0.0015로 설정하였다.
 
 
-우리는 결과를 비교해보기위해 우리가 만든 DNN 모델과 Support Vector Machin(SVM), K-Nearest Neighborhood(KNN), Robust Linear Regression(RLR), RF(Random Forest) 모델을 비교해 보았다. 
+우리는 결과를 비교해보기 위해 우리가 만든 DNN 모델과 Support Vector Machin(SVM), K-Nearest Neighborhood(KNN), Robust Linear Regression(RLR), RF(Random Forest) 모델을 비교해 보았다. 
 
 ![KakaoTalk_20240616_111316565](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/67104de1-8f7f-46a3-9779-6c008f21f0ef)
 
 accuracy는 정확도로써 모델이 예측한 값 중 정답의 비율을 나타내며 1에 가까울수록 좋다. 위 표는 test 데이터에 대한 accuracy로 DNN 모델의 Score가 가장 높음을 알 수 있다.
 
-Precision은 모델이 positive라고 예측한 것 중 실제로 positive인 것의 비율이다. 0에서 1 사이의 값을 가지며, 1에 가까울수록 정밀도가 높은 모델이다. 우리는 상식에 접근하여 생각해 보았을 때 살았을 거라고 생각한 예측한 사람 중 죽는 것이 더 문제된다고 판단하였다. 이에 따라 살았을 거라고 생각한 사람 중 진짜로 살아있는 사람에 대한 정확도를 예측하였다.
+Precision은 모델이 positive라고 예측한 것 중 실제로 positive인 것의 비율이다. 0에서 1 사이의 값을 가지며, 1에 가까울수록 정밀도가 높은 모델이다. 우리는 상식에 접근하여 생각해 보았을 때 살았을 거라고 생각한 예측한 사람 중 사망자가 존재하는 것이 더 문제된다고 판단하였다. 이에 따라 살았을 거라고 생각한 사람 중 진짜로 살아있는 사람에 대한 정확도를 예측하였다.
 
 ![2](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/61816700-a090-4b51-9167-cbdefd0373f9)
 
-위 표는 정확도에 대한 각 모델의 score이다. 마찬가지로 DNN이 가장 높은 점수를 얻은것을 볼 수 있다.
+위 표는 정확도에 대한 각 모델의 score이다. 마찬가지로 DNN이 가장 높은 점수를 얻은 것을 볼 수 있다.
 
 
 
 V. Conclusion: Discussion
 
-우리는 이번 프로젝트를 통해 인공신경망의 구조와 이에 적용된 수학적 base를 파악할 수 있었으며 이를 오픈데이터에 적용해 보며 실제 예측또한 수행해 보았다. 그리고 이를 다른 모델들과 비교해보며 그 결과를 분석해보았다. 결론적으로 다른 모델들에 비해 좋은 결과를 얻을 수 있었지만, 코드를 작성하고 하이퍼 파리미터를 조정해 보면서 다른 모델들에 비해 복잡하고 조정해야할 변수가 많아 어려움이 있었다. 따라서 추후에 하이퍼 파라미터를 조정하는 방법에 대해 연구해 보고 이러한 문제점을 해결해 보고자 한다.
+우리는 이번 프로젝트를 통해 인공신경망의 구조와 이에 적용된 수학적 base를 파악할 수 있었으며, 이를 오픈데이터에 적용해 보며 실제 예측또한 수행해 보았다. 그리고 이를 다른 모델들과 비교해보며 그 결과를 분석해보았다. 결론적으로 다른 모델들에 비해 좋은 결과를 얻을 수 있었지만, 코드를 작성하고 하이퍼 파리미터를 조정해 보면서 다른 모델들에 비해 복잡하고 조정해야할 변수가 많아 어려움이 있었다. 따라서 추후에 하이퍼 파라미터를 조정하는 방법에 대해 연구해 보고 이러한 문제점을 해결해 보고자 한다.
