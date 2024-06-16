@@ -76,12 +76,19 @@ IV. Evaluation & Analysis-Graphs, tables, any statistics (if any)
 
 
 ![KakaoTalk_20240616_104311355](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/41aa17c7-fccb-4fc8-a81d-96a776e0610e)
+
 data에 대한 information이다. 모두 11개의 독립변수가 존재하며 299개의 데이터가 존재한다. null 값은 존재하지 않고 데이터 타입이 float와 int로 존재함으로 따로 vector화할 필요는 없다.
+
 ![KakaoTalk_20240616_104528371](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/6f0e7d3f-8633-4ed9-8a9a-7315f601ef40)
+
 데이터의 고유값 갯수이다. 표를 보면 anaemia, diabetes, high_blood_pressure, sex, smoking은 binary 변수이며, 우리의 target 변수인 DEATH_EVENT 역시 binary 변수이다.
+
 ![KakaoTalk_20240616_104754013](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/0efdd367-1cf3-4dcc-a53a-d71071e54b70)
+
 다음은 데이터의 상위 5개의 변수를 보여준 표이다.
+
 ![KakaoTalk_20240616_103254882](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/7433d075-8d5b-4c75-b08b-e6c707dc261a)
+
 각 변수와 death  간의 상관계수에 대한 히트맵이다. 표를 보면 성별과 다른 변수들에 비해 상대적으로 높은 선형관계를 가짐을 알 수 있다.
 
 V. Conclusion: Discussion
