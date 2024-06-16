@@ -17,7 +17,7 @@ II. Datasets
 출처: https://www.kaggle.com/datasets/rabieelkharoua/predict-survival-of-patients-with-heart-failure
 
 변수 설명:
-    aage 나이
+    age 나이
     anaemia 빈혈
     creatinine_phosphokinase 크레아티닌 인산화효소
     diabetes 당뇨여부
