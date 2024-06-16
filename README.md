@@ -29,6 +29,15 @@ II. Datasets
 독립변수 개수: 12개
 종속변수: DEATH_EVENT
 
+![KakaoTalk_20240616_104311355](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/41aa17c7-fccb-4fc8-a81d-96a776e0610e)
+data에 대한 information이다. 모두 11개의 독립변수가 존재하며 299개의 데이터가 존재한다. null 값은 존재하지 않고 데이터 타입이 float와 int로 존재함으로 따로 vector화할 필요는 없다.
+![KakaoTalk_20240616_104528371](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/6f0e7d3f-8633-4ed9-8a9a-7315f601ef40)
+데이터의 고유값 갯수이다. 표를 보면 anaemia, diabetes, high_blood_pressure, sex, smoking은 binary 변수이며, 우리의 target 변수인 DEATH_EVENT 역시 binary 변수이다.
+![KakaoTalk_20240616_104754013](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/0efdd367-1cf3-4dcc-a53a-d71071e54b70)
+다음은 데이터의 상위 5개의 변수를 보여준 표이다.
+![KakaoTalk_20240616_103254882](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/7433d075-8d5b-4c75-b08b-e6c707dc261a)
+각 변수와 death  간의 상관계수에 대한 히트맵이다. 표를 보면 성별과 다른 변수들에 비해 상대적으로 높은 선형관계를 가짐을 알 수 있다.
+
 III. Methodology
 -explaining your choice of algorithms (methods)
 1. ANN(인공신경망)이란?
@@ -46,6 +55,7 @@ chain rule은 합성함수를 미분하는 방법인데, 합성함수의 변화 
 ![KakaoTalk_20240526_163602832](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/d29193dc-a26e-4a2b-b477-891173c8fc93)
 우리는 이를 이용하여, 즉 gradient값을 이용하여 극소값을 찾는 최적화 문제를 풀 수 있다.
 ![최적화 문제 예시](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/88fb2d3a-a69c-4c3d-b860-188f1c866aab)
+
 
 
 5. DNN의 장단점
@@ -71,6 +81,5 @@ Binary Cross Entropy(BCE)이다. BCE는 이진화된 label을 가진 데이터�
 
 IV. Evaluation & Analysis-Graphs, tables, any statistics (if any)
 
-V. Related Work (e.g., existing studies)-Tools, libraries, blogs, or any documentation that you have used to do this project.
 
-VI. Conclusion: Discussion
+V. Conclusion: Discussion
