@@ -106,4 +106,13 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 신경망 구조에 대한 요약이다.
 우리는 신경망 모델은총 1개의 입력층, 2개의 은닉층, 그리고 출력층 총 4개의 층으로 구성되어 있으며 활성화 함수로 leakyrelu를 사용하였다. 출력층에는 binary 변수에 대한 예측임으로 시그모이드 함수를 사용하였고 손실함수로 binary cross entropy를 사용하였다.
 
+추가적으로 optimizer는 adam을 사용하였고 learning_rate를 0.0015로 설정하였다.
+
+
+우리는 결과를 비교해보기위해 우리가 만든 DNN 모델과 Support Vector Machin(SVM), K-Nearest Neighborhood(KNN), Robust Linear Regression(RLR), RF(Random Forest) 모델을 비교해 보았다. 
+
+![KakaoTalk_20240616_111316565](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/67104de1-8f7f-46a3-9779-6c008f21f0ef)
+
 V. Conclusion: Discussion
+
+
