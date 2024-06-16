@@ -73,6 +73,8 @@ Binary Cross Entropy(BCE)이다. BCE는 이진화된 label을 가진 데이터�
 
 
 IV. Evaluation & Analysis-Graphs, tables, any statistics (if any)
+
+
 ![KakaoTalk_20240616_104311355](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/41aa17c7-fccb-4fc8-a81d-96a776e0610e)
 data에 대한 information이다. 모두 11개의 독립변수가 존재하며 299개의 데이터가 존재한다. null 값은 존재하지 않고 데이터 타입이 float와 int로 존재함으로 따로 vector화할 필요는 없다.
 ![KakaoTalk_20240616_104528371](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/6f0e7d3f-8633-4ed9-8a9a-7315f601ef40)
