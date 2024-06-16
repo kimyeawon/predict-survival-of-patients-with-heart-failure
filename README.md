@@ -95,6 +95,15 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 
 ![KakaoTalk_20240616_103254882](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/7433d075-8d5b-4c75-b08b-e6c707dc261a)
 
-각 변수와 death  간의 상관계수에 대한 히트맵이다. 표를 보면 성별과 다른 변수들에 비해 상대적으로 높은 선형관계를 가짐을 알 수 있다.
+각 변수와 death  간의 상관계수에 대한 히트맵이다. 표를 보면 다른 변수들에 비해 성별과 상대적으로 높은 선형관계를 가짐을 알 수 있다.
+
+![KakaoTalk_20240616_105724555](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/4d7e364a-dcf2-45b6-ac01-17406ac076b6)
+
+종속변수와 독립변수를 분리한다. 이후, 학습량을 줄이고 변수에 대한 영향력을 동일하게 하기위해(KNN 사용시 필요) min-max scaling을 통해 정규화하여 준다. 그리고 20퍼센트 수준으로 train 데이터와 test 데이터를 구성한다.
+
+![KakaoTalk_20240616_110024795](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/4d6db861-037a-4c96-975e-da02b1d5935e)
+
+신경망 구조에 대한 요약이다.
+우리는 신경망 모델은총 1개의 입력층, 2개의 은닉층, 그리고 출력층 총 4개의 층으로 구성되어 있으며 활성화 함수로 leakyrelu를 사용하였다. 출력층에는 binary 변수에 대한 예측임으로 시그모이드 함수를 사용하였고 손실함수로 binary cross entropy를 사용하였다.
 
 V. Conclusion: Discussion
