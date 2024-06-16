@@ -5,12 +5,17 @@ Members: 김예원(건축학과, yeawon0515@hanyang.ac.kr)
          신승국(수리데이터사이언스학과, tlstmdrnr135@naver.com)
          장위신(기계공학과,weixin0713@hanyang.ac.kr）
          
-I. Proposal (Option 1or 2)
+I. Proposal 
+
 심부전이란 심장의 구조적 또는 기능적 이상으로 인해 심장이 혈액을 받아들이는 이완 기능이나 짜내는 수축 기능이 감소하여 신체 조직에 필요한 혈액을 제대로 공급하지 못해 발생하는 질환군을 말한다. 발생 원인은 스트래스, 식습관, 음주 등 매우 다양하게 나타나며 바쁜 사회를 살아가는 현대인들에게 발생률이 점점 증가하고 있다. 또한 이 질환은 생명과 직결되는 매우 중요한 과제임으로 이에 대한 예측은 오늘날 매우 중요한 과제라고 할 수 있다. 
 딥러닝은 주워진 데이터를 토대로 예측을 수행하는 매우 강력한 수단중 하나로, 많은 사람들에게 관심을 받으며 빠른 속도로 변화하고 있다. 또한 다양한 산업과 직군속에서 활용 및 가치를 창출하고 있으며 따라서 이에대한 역량을 갖추는 것은 매우 중요한 일중 하나이다. 우리는 DNN 모델의 구조를 파악하고 심부전에 의한 사망 여부 예측을 통해 간단한 문제를 해결한 후 다른 여러 머신러닝 기법들과 비교를 통해 딥러닝의 특성을 파악함으로써 이러한 역량을 갖출수 있고자 한다.
 
+
+
 II. Datasets
+
 출처: https://www.kaggle.com/datasets/rabieelkharoua/predict-survival-of-patients-with-heart-failure
+
 변수 설명:
     aage 나이
     anaemia 빈혈
@@ -32,7 +37,9 @@ II. Datasets
 
 
 III. Methodology
--explaining your choice of algorithms (methods)
+
+-explaining our choice of algorithms
+
 1. ANN(인공신경망)이란?
 인공신경망(ANN)이란 동물 뇌의 신경망을 모방해 만든 알고리즘으로, 뉴런을 모방한 노드들이 연결되어 있는 형태이다. 일반적으로 각각 한 개의 입력층과 출력층, 은닉층을 가진다.
 
@@ -65,7 +72,9 @@ chain rule은 합성함수를 미분하는 방법인데, 합성함수의 변화 
 (1) 계산량이 많고 복잡하다
 (2) 많은 하이퍼 파라미터들이 존재하기 때문에 조정 과정은 복잡하고 시간이 많이 소요된다.
 
--Explaining features (if any)
+
+-Explaining features 
+
 1. Binary cross entropy
 최적화 문제에 사용될 loss funtion은 다양한 것들이 사용되지만, 이중 우리가 사용할 loss function은 
 Binary Cross Entropy(BCE)이다. BCE는 이진화된 label을 가진 데이터에 사용되는 손실함수로, 최적화를 통해 두 라벨에 대한 베르누이 확률 분포의 근사를 수행하게 만든다.
@@ -76,6 +85,7 @@ Binary Cross Entropy(BCE)이다. BCE는 이진화된 label을 가진 데이터�
 활성화함수란 다층 구조의 신경망에서 주로 사용되는 함수로, 인공신경망의 각 노드에서 입력받은 신호를 학습에 이용할 수 있게 출력 신호로 처리한다. 비선형성을 도입하여 딥러닝 모델이 복잡한 패턴을 학습할 수 있게 하고, 효율적인 정보전달이 가능하게 하며 노드의 활성화 여부를 결정한다. 아래 이미지는 다양한 활성화 함수의 예시이다.
 
 ![KakaoTalk_20240526_164747044_01](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/3e66eaf5-bc43-4160-91af-15e4484e2088)
+
 
 
 IV. Evaluation & Analysis-Graphs, tables, any statistics (if any)
@@ -119,6 +129,8 @@ Precision은 모델이 positive라고 예측한 것 중 실제로 positive인 �
 ![2](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/61816700-a090-4b51-9167-cbdefd0373f9)
 
 위 표는 정확도에 대한 각 모델의 score이다. 마찬가지로 DNN이 가장 높은 점수를 얻은것을 볼 수 있다.
+
+
 
 V. Conclusion: Discussion
 
