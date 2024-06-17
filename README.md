@@ -119,13 +119,13 @@ data에 대한 information이다. 모두 11개의 독립변수가 존재하며 2
 
 우리는 결과를 비교해보기 위해 우리가 만든 DNN 모델과 Support Vector Machin(SVM), K-Nearest Neighborhood(KNN), Robust Linear Regression(RLR), RF(Random Forest) 모델을 비교해 보았다. 
 
-![KakaoTalk_20240616_111316565](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/67104de1-8f7f-46a3-9779-6c008f21f0ef)
+![KakaoTalk_20240617_120654112](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/8f36e6b7-a112-4721-9033-69bf85a0f237)
 
 accuracy는 정확도로써 모델이 예측한 값 중 정답의 비율을 나타내며 1에 가까울수록 좋다. 위 표는 test 데이터에 대한 accuracy로 DNN 모델의 Score가 가장 높음을 알 수 있다.
 
 Precision은 모델이 positive라고 예측한 것 중 실제로 positive인 것의 비율이다. 0에서 1 사이의 값을 가지며, 1에 가까울수록 정밀도가 높은 모델이다. 우리는 상식에 접근하여 생각해 보았을 때 살았을 거라고 생각한 예측한 사람 중 사망자가 존재하는 것이 더 문제된다고 판단하였다. 이에 따라 살았을 거라고 생각한 사람 중 진짜로 살아있는 사람에 대한 정확도를 예측하였다.
 
-![2](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/61816700-a090-4b51-9167-cbdefd0373f9)
+![KakaoTalk_20240617_120654112_01](https://github.com/kimyeawon/predict-survival-of-patients-with-heart-failure/assets/168324887/37669749-a0d4-4c6c-8d0f-a127e3fcc968)
 
 위 표는 정확도에 대한 각 모델의 score이다. 마찬가지로 DNN이 가장 높은 점수를 얻은 것을 볼 수 있다.
 
