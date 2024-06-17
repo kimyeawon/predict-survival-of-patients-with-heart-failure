@@ -40,8 +40,6 @@ II. Datasets
 
 III. Methodology
 
--explaining our choice of algorithms
-
 1. ANN(인공신경망)이란?
 인공신경망(ANN)이란 동물 뇌의 신경망을 모방해 만든 알고리즘으로, 뉴런을 모방한 노드들이 연결되어 있는 형태이다. 일반적으로 각각 한 개의 입력층과 출력층, 은닉층을 가진다.
 
