@@ -140,5 +140,7 @@ V. Conclusion: Discussion
 https://youtu.be/XrQWpkzby5E
 
 김예원(조장): 총괄
+
 신승국: 코드, 발표 영상 제작
+
 장위신: 자료 수집
