@@ -2,7 +2,9 @@
 Title: predict survival of patients with heart failure
 
 Members: 김예원(건축학과, yeawon0515@hanyang.ac.kr)
+
          신승국(수리데이터사이언스학과, tlstmdrnr135@naver.com)
+         
          장위신(기계공학과,weixin0713@hanyang.ac.kr）
          
 I. Proposal 
